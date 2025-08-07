@@ -1,0 +1,12 @@
+const quotes = [
+  "The best way to get started is to quit talking and begin doing.",
+  "Don’t let yesterday take up too much of today.",
+  "Success is not in what you have, but who you are.",
+  "Dream big and dare to fail.",
+  "Keep going. Everything you need will come to you."
+];
+
+function generateQuote() {
+  const quote = quotes[Math.floor(Math.random() * quotes.length)];
+  document.getElementById('quote').innerText = quote;
+}
